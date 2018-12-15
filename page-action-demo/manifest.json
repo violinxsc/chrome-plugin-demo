@@ -1,8 +1,8 @@
 {
 	// 清单文件的版本，这个必须写，而且必须是2
 	"manifest_version": 2,
-	// 插件的名称
-	"name": "page-action-demo",
+	// 插件的名称:捡垃圾插件
+	"name": "2009-Plug-in",
 	// 插件的版本
 	"version": "1.0.0",
 	// 插件描述
