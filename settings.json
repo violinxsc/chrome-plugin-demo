@@ -1,0 +1,42 @@
+{
+    "telemetry.enableTelemetry": false,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.validate.enable": false,
+    "css.validate": false,
+    "scss.validate": false,
+    "less.validate": false,
+    "editor.fontSize": 16,
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "vscode-icons",
+    "git.autofetch": true,
+    "prettier.printWidth": 100,
+    "prettier.trailingComma": "none",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.validation.template": false,
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "html",
+      "vue",
+      {
+          "language": "vue",
+          "autoFix": true
+      }
+    ],
+    "vetur.format.scriptInitialIndent": true,
+    "vetur.format.styleInitialIndent": true,
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "workbench.startupEditor": "newUntitledFile",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "vsicons.dontShowNewVersionMessage": true,
+    "files.associations": {
+        ".stylelintrc": "json"
+    },
+    "editor.fontWeight": "300",
+    "terminal.integrated.rendererType": "dom",
+    "workbench.editor.enablePreview": false,
+    "breadcrumbs.enabled": true,
+    "explorer.autoReveal": false,
+    "explorer.confirmDelete": false
+}
