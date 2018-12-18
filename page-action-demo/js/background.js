@@ -4,10 +4,18 @@ chrome.runtime.onInstalled.addListener(function(){
 			{
 				conditions: [
 					// 只有打开斗鱼才显示pageAction
-					new chrome.declarativeContent.PageStateMatcher({pageUrl: {urlContains: 'baidu.com'}})
+					new chrome.declarativeContent.PageStateMatcher({pageUrl: {urlContains: 'douyu.com'}})
 				],
 				actions: [new chrome.declarativeContent.ShowPageAction()]
 			}
 		]);
 	});
+});
+// 右键添加跳转至斗鱼TV
+chrome.contextMenus.create({
+	title: '去斗鱼TV',
+	onclick: function()	{
+		// 注意不能使用location.href，因为location是属于background的window对象
+		chrome.tabs.create({url: 'https://www.douyu.com/directory/all'});
+	}
 });
