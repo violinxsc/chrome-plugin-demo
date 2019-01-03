@@ -11,3 +11,11 @@ chrome.runtime.onInstalled.addListener(function(){
 		]);
 	});
 });
+// 右键添加跳转至斗鱼TV
+chrome.contextMenus.create({
+	title: '去斗鱼TV',
+	onclick: function()	{
+		// 注意不能使用location.href，因为location是属于background的window对象
+		chrome.tabs.create({url: 'https://www.douyu.com/directory/all'});
+	}
+});
