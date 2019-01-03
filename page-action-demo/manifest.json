@@ -18,11 +18,7 @@
 	"page_action":
 	{
 		"default_icon": "img/icon.png",
-<<<<<<< HEAD
-		"default_title": "2009插件",
-=======
 		"default_title": "2009-Plug-in",
->>>>>>> 1e52ffb77965a7dc066ceed59eb7b6ee9ceffafc
 		"default_popup": "popup.html"
 	},
 	// 权限申请
