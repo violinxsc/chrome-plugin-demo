@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(function(){
 			{
 				conditions: [
 					// 只有打开斗鱼才显示pageAction
-					new chrome.declarativeContent.PageStateMatcher({pageUrl: {urlContains: 'baidu.com'}})
+					new chrome.declarativeContent.PageStateMatcher({pageUrl: {urlContains: 'douyu.com'}})
 				],
 				actions: [new chrome.declarativeContent.ShowPageAction()]
 			}
