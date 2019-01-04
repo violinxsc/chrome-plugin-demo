@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(function(){
 			{
 				conditions: [
 					// 只有打开斗鱼才显示pageAction
-					new chrome.declarativeContent.PageStateMatcher({pageUrl: {urlContains: 'douyu.com'}})
+					new chrome.declarativeContent.PageStateMatcher({pageUrl: {urlContains: '//yuba.douyu.com/p/943673931545027287'}})
 				],
 				actions: [new chrome.declarativeContent.ShowPageAction()]
 			}
@@ -13,9 +13,9 @@ chrome.runtime.onInstalled.addListener(function(){
 });
 // 右键添加跳转至斗鱼TV
 chrome.contextMenus.create({
-	title: '去斗鱼TV',
+	title: '去2009鱼吧',
 	onclick: function()	{
 		// 注意不能使用location.href，因为location是属于background的window对象
-		chrome.tabs.create({url: 'https://www.douyu.com/directory/all'});
+		chrome.tabs.create({url: 'https://yuba.douyu.com/group/newall/3477579'});
 	}
 });
